@@ -7,6 +7,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import config from './config';
 import { Amplify } from 'aws-amplify';
+import { initSentry } from "./lib/errorLib";
+
+initSentry();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
